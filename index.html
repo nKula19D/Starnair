@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="kosmos, starnair, konstelacje, zodiaki">
+    <meta name="description" content="Starnair jest to strona o kosmosie, zodiakach i konstelacjach. Znajdują się tutaj wysokiej jakości artykuły o planetach i konstelacjach oraz oferty kupna własnej gwiazdy.">
+    <meta name="author" content="Natalia Kula">
     <link rel="stylesheet" href="style.css">
     <title>STARNAIR</title>
 </head>
@@ -10,7 +13,7 @@
     <header>
         <h2 class="baner_lower_text">STARNAIR</h2>
         <h1 class="baner_upper_text">KOSMOS</h1>
-        <p class="baner_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie morbi vel lobortis vehicula risus at cursus. Sed pretium faucibus rhoncus molestie dui. Pharetra, aliquet iaculis id nibh vel ultrices eu. Nisi, nisi etiam tortor, mattis etiam.
+        <p class="baner_paragraph">Starnair jest to strona o kosmosie, zodiakach i konstelacjach. Znajdują się tutaj wysokiej jakości artykuły o planetach i konstelacjach oraz oferty kupna własnej gwiazdy.
         </p>
         <div class="logo"><img src="zdj_strona/loga/logo.png" alt="logo STARNAIR"></div>
         <nav class="menu">
@@ -202,7 +205,7 @@
         <article class="planety_artykul">
             <h3>JOWISZ</h3>
             <div class="justify">
-                <p> piąta w kolejności od Słońca i największa planeta Układu Słonecznego[b]. Masa Jowisza jest nieco mniejsza niż jedna tysięczna masy Słońca, a zarazem dwa i pół razy większa niż łączna masa pozostałych planet w Układzie Słonecznym. Wraz z Saturnem, Uranem i Neptunem tworzą grupę gazowych olbrzymów, nazywaną czasem również planetami jowiszowymi.</p>
+                <p> piąta w kolejności od Słońca i największa planeta Układu Słonecznego. Masa Jowisza jest nieco mniejsza niż jedna tysięczna masy Słońca, a zarazem dwa i pół razy większa niż łączna masa pozostałych planet w Układzie Słonecznym. Wraz z Saturnem, Uranem i Neptunem tworzą grupę gazowych olbrzymów, nazywaną czasem również planetami jowiszowymi.</p>
                 </div>        
             </article>
 
@@ -232,10 +235,16 @@
         
     </div>
 </div>
+
 <div class="oferta" id="oferta">
-    <img src="zdj_strona/karty.png" alt="talia kart">
-    <h3>CZYTANIE ONLINE</h3>
-    <a href="#"><h2>SPRAWDŹ OFERTĘ</h2></a>
+    <div class="oferta_tekst">
+    <h2>KUP SWOJĄ GWIAZDĘ</h2>
+    <p class="justify">Sprawdź naszą szeroką ofertę gwiazd! Gwiazda nazwana imieniem danej osoby to świetny pomysł na prezent na różnorodne okazje. Po zakupie otrzymasz certyfikat nabycia gwiazdy oraz jej zdjęcie.</p>
+    <a><h3 class="dowiedziec2 dowiedziec">DOWIEDZ SIĘ WIĘCEJ</h3></a>
+    </div>  
+    <img src="zdj_strona/loga/star.png" alt="gwiazda" class="gwiazdka">
+    
+    
 </div>
 <div class="formularz" id="kontakt">
     
@@ -243,11 +252,12 @@
         <form>
             <h3>FORMULARZ KONTAKTOWY</h3>
             <label for="imie">Imię:</label>
-            <input type="text" name="imie">
+            <input type="text" name="imie" required>
             <label for="nazwisko">Nazwisko:</label>
-            <input type="text" name="nazwisko">
+            <input type="text" name="nazwisko" required>
             <label for="wiadomosc">Wiadomość:</label>
-            <textarea name="wiadomosc"></textarea>
+            <textarea name="wiadomosc" required></textarea>
+            <label class="rodo justify" name="rodo"> <input type="checkbox" for="rodo" required> Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w powyższym formularzu w celach handlowych i marketingowych przez Starnair oraz przez podmioty trzecie.</label>
             <input type="submit" value="Wyślij">
         </form>
     </div>
